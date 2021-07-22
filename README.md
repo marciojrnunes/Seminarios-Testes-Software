@@ -6,7 +6,7 @@
 
 Esse seminários tem como objetivo mostrar aos colegas de turma as ferramentas existentes para a implementação de teste de software na linguagem Java. O seu grupo deverá escolher um dos seguintes tópicos abaixo:
 
-- BDD: Behavior Driven Development ([Cucumber](https://cucumber.io/))
+- BDD: Behavior Driven Development ([Cucumber](https://cucumber.io/)) -> Dupla: Fernanda Carvalho e Marcelo Simim
 - Bibliotecas de asserção ([Hamcrest](http://hamcrest.org/JavaHamcrest/tutorial))
 - Mockup de classes ([Mockito](https://site.mockito.org/))
 - Mockup de dados ([Java Faker](https://dius.github.io/java-faker/))
