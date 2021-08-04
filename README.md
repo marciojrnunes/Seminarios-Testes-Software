@@ -10,7 +10,7 @@ Esse seminários tem como objetivo mostrar aos colegas de turma as ferramentas e
 - Bibliotecas de asserção ([Hamcrest](http://hamcrest.org/JavaHamcrest/tutorial))
 - Mockup de classes ([Mockito](https://site.mockito.org/)) -> Dupla: Mateus Damasceno e Jefferson Abreu
 - Mockup de dados ([Java Faker](https://dius.github.io/java-faker/))
-- Testes de integração ([DBUnit](http://www.dbunit.org/))
+- Testes de integração ([DBUnit](http://www.dbunit.org/)) -> Frederico Teixeira Azevedo
 
 ## Roteiro
 
