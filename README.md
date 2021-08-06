@@ -9,8 +9,8 @@ Esse seminários tem como objetivo mostrar aos colegas de turma as ferramentas e
 - BDD: Behavior Driven Development ([Cucumber](https://cucumber.io/)) -> Dupla: Fernanda Carvalho e Marcelo Simim
 - Bibliotecas de asserção ([Hamcrest](http://hamcrest.org/JavaHamcrest/tutorial))
 - Mockup de classes ([Mockito](https://site.mockito.org/)) -> Dupla: Mateus Damasceno e Jefferson Abreu
-- Mockup de dados ([Java Faker](https://dius.github.io/java-faker/))
-- Testes de integração ([DBUnit](http://www.dbunit.org/)) -> Frederico Teixeira Azevedo
+- Mockup de dados ([Java Faker](https://dius.github.io/java-faker/)) -> Frederico Teixeira Azevedo
+- Testes de integração ([DBUnit](http://www.dbunit.org/))
 
 ## Roteiro
 
