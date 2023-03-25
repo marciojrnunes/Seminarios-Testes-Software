@@ -1,6 +1,6 @@
 # Seminários: Teste de Software
 
-**Professor: João Eduardo Montandon**
+**Professor: Dener Augusto de Lisboa Brandão e João Eduardo Montandon**
 
 **Núm de integrantes: 2 alunos**
 
@@ -11,6 +11,8 @@ Esse seminários tem como objetivo mostrar aos colegas de turma as ferramentas e
 - Mockup de classes ([Mockito](https://site.mockito.org/))
 - Mockup de dados ([Java Faker](https://dius.github.io/java-faker/))
 - Testes de integração ([DBUnit](http://www.dbunit.org/))
+
+Dois grupos poderão utilizar o mesmo tema.
 
 ## Roteiro
 
