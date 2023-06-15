@@ -19,12 +19,19 @@ O framework Mockito, é uma das soluções de código aberto mais conhecidas e a
 Para começar a utilizar o Mockito em um projeto Java é necessario iniciar com a importação do framework atraves do gerenciador de dependências de sua preferência, abaixo exemplificamos como realizar essa importação atraves do Maven ou Gradle:
 
 `Maven`
+
+*Configuração pom.xml:*
+
 ![Maven](images/pom_xml.png)
-*Configuração pom.xml*
+
+
 
 `Gradle`
+
+*Configuração build.gradle:*
+
 ![Gradle](images/build_gradle.png)
-*Configuração build.gradle*
+
 
 
 
