@@ -20,16 +20,47 @@ Para começar a utilizar o Mockito em um projeto Java é necessario iniciar com 
 
 `Maven`
 
-*Configuração pom.xml:*
+*Configuração pom.xml*
 
-![Maven](images/pom_xml.png)
+```xml
+<dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.9.2</version>
+            <scope>test</scope>
+        </dependency>
 
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>5.3.1</version>
+        </dependency>
+</dependencies>
+```
 
 `Gradle`
 
-*Configuração build.gradle:*
+*Configuração build.gradle*
+```java
+repositories {
+    mavenCentral()
+}
 
-![Gradle](images/build_gradle.png)
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
+    testImplementation 'org.mockito:mockito-core:5.2.0'
+}
+
+test {
+    useJUnitPlatform()
+}
+```
+
+*OBS: O framework JUnit5 está sendo importado em conjunto ao Mockito e foi ultilizado para gerar a plataforma de testes.*
+
+*Consulte a documentação para maiores detalhes: https://junit.org/junit5/docs/current/user-guide/*
 
 
 # Ferramentas similares
