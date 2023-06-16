@@ -131,6 +131,7 @@ public interface ProdutoService {
 Após realizar o primeiro passo e ter criado as classes da solução a ser testada podemos partir para implementação dos testes da classe ProdutoSearch. Para isso devemos criar as classes ProdutoSearchTeste e ProdutosCONST, sendo a primeira a classe principal de testes e a segundo os mocks a serem instânciados.
 
 `ProdutoSearchTeste`
+
 A classe ProdutoSearchTeste é a classe base de teste, é nela em que serão escritas o comportamento de testes e por onde a solução deve ser testada afim de verificar o devido funcionamento da solução. Ela apresenta dois diferentes atribultos, o primeiro ***produtoServiceTeste*** representa uma instância da interface ***ProdutoService*** que servira como parâmetro para classe testada, a ProdutoSearch, que também se encontra instânciada no ambiente de teste como ***produtoSearch***.
 
 O Construtor da classe de testes, **public void init()**, inicializa o objeto ***produtoServiceTeste*** através de mockagem estática da resposta da **ProdutoService**, em sua primeira linha, enquanto que nas duas seguintes, define qual objeto deve ser retornado ao mock de acordo com a entrada recebida. E finaliza realizado a inicialização do objeto ***produtoSearch*** passando como paramêtro o objeto mockado.
