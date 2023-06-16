@@ -62,6 +62,152 @@ test {
 
 *Consulte a documentação para maiores detalhes: https://junit.org/junit5/docs/current/user-guide/*
 
+# Iniciando os Testes
+
+Para esse tutorial ultilizamos como exemplo a elaboração de um pequeno sistema de pesquisa de produtos, composto por 2 classes de solução e uma de teste. Em uma situação real poderia ser necessária a implementação de diversas outras classes bases e de testes que represetassem o objeto real tratado pelo projeto desevolvido. 
+
+## Classes Bases e Interface
+
+O primeiro passo desse tutorial é implementar dentro de **src/main/java** as seguintes classes:
+
+`Produto`
+
+A classe produto define um produto dentro de nosso exemplo, e é composta basicamente pelos atribultos id, nome e valor e pelos metodos getter's e setter's, além de um construtor único.
+
+```Java
+public class Produto {
+    private  int id;
+    private String nome;
+    private double valor;
+
+    public Produto(int id, String nome, double valor){
+        setId(id);
+        setNome(nome);
+        setValor(valor);
+    }
+
+    public int getId() { return id; }
+
+    public void setId(int id) { this.id = id; }
+
+    public String getNome() { return nome; }
+
+    public void setNome(String nome) { this.nome = nome;}
+
+    public double getValor() { return valor; }
+
+    public void setValor(double valor) { this.valor = valor;}
+}
+```
+
+`ProdutoSearch`
+
+A classe ProdutoSearch simula uma possivel classe que comunicaria com serviços em um sistema real, um tipo de DAO, e possui um unico atribulto produto que é uma instância da interface ProdutoService.
+
+```Java
+public class ProdutoSearch {
+    private final ProdutoService produto;
+
+    public ProdutoSearch(ProdutoService produto){
+        this.produto = produto;
+    }
+
+    public Produto getProduto(int id){
+        return produto.getProduto(id);
+    }
+}
+```
+
+`ProdutoService`
+
+```Java
+public interface ProdutoService {
+    Produto getProduto(int id);
+}
+```
+
+## Implementado o Teste
+
+Após realizar o primeiro passo e ter criado as classes da solução a ser testada podemos partir para implementação dos testes da classe ProdutoSearch. Para isso devemos criar as classes ProdutoSearchTeste e ProdutosCONST, sendo a primeira a classe principal de testes e a segundo os mocks a serem instânciados.
+
+`ProdutoSearchTeste`
+A classe ProdutoSearchTeste é a classe base de teste, é nela em que serão escritas o comportamento de testes e por onde a solução deve ser testada afim de verificar o devido funcionamento da solução. Ela apresenta dois diferentes atribultos, o primeiro ***produtoServiceTeste*** representa uma instância da interface ***ProdutoService*** que servira como parâmetro para classe testada, a ProdutoSearch, que também se encontra instânciada no ambiente de teste como ***produtoSearch***.
+
+O Construtor da classe de testes, **public void init()**, inicializa o objeto ***produtoServiceTeste*** através de mockagem estática da resposta da **ProdutoService**, em sua primeira linha, enquanto que nas duas seguintes, define qual objeto deve ser retornado ao mock de acordo com a entrada recebida. E finaliza realizado a inicialização do objeto ***produtoSearch*** passando como paramêtro o objeto mockado.
+
+O metodo ***testProdutoNull()*** realizará o teste simulando uma entrada não encontrada ou inválida que deverá retornar um produto nulo. 
+Enquanto o metodo ***testProduto()*** realizará o teste simulando uma entrada bem sucedida, e retornar um produto válido.
+
+Para execultar qualquer um dos metodos de testes, está faltando apenas definir os objetos ***NULL*** e ***ITEM*** pertecentes a **ProdutosCONST**.
+
+```Java
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
+
+public class ProdutoSearchTest {
+
+    private ProdutoService produtoServiceTeste;
+    private ProdutoSearch produtoSearch;
+
+    @BeforeEach
+    public void init() {
+        produtoServiceTeste = Mockito.mock(ProdutoService.class);
+
+        Mockito.when(produtoServiceTeste.getProduto(Mockito.anyInt())).thenReturn(ProdutosCONST.NULL);
+        Mockito.when(produtoServiceTeste.getProduto(125)).thenReturn(ProdutosCONST.ITEM);
+
+        produtoSearch = new ProdutoSearch(produtoServiceTeste);
+    }
+
+    @Test
+    public void testProdutoNull(){
+        Produto produto = produtoSearch.getProduto(1);
+        assertNull(produto);
+    }
+
+    @Test
+    public void testProduto(){
+        Produto produto = produtoSearch.getProduto(125);
+        assertEquals(ProdutosCONST.ITEM, produto);
+    }
+
+}
+```
+
+`ProdutosCONST`
+
+A classe **ProdutosCONST** realiza apenas o instanciamento de dois atribultos que servirão como mock's para o teste. Sendo o primeiro um objeto do tipo **Produto** setado como ***null***, e o segundo pertencente ao mesmo tipo, no entando instâncido como um item válido.
+
+```Java
+public class ProdutosCONST {
+    public static final Produto NULL = null;
+    public static final Produto ITEM = new Produto(125, "Item A", 6.7);
+}
+```
+
+Uma vez implementada todas as classes acima, basta execultar algum dos metodos (clicando no icone de iniciar ao lado do metódo) de testes e aguardar a realização do mesmo para que verifique o funcionamento ideal do programa. Se o teste for bem sucedido, o resultado exibido no terminal iniciado será do tipo **TESTS PASSED**, caso contrário, será exibida a exceção lançada pelo programa e o resultado **TESTS FAILED**. Conforme ilustrado abaixo:
+
+*Testando testProdutoNull():*
+![null]("images/null.png")
+
+*Resultado testProdutoNull():*
+![null_success]("images/null_success.png")
+
+*Testando testProduto() - Caso Sucesso:*
+![null]("images/produto_125.png")
+
+*Resultado testProduto() - Resultado Sucesso:*
+![null_success]("images/produto_success.png")
+
+*Testando testProduto() - Caso Erro:*
+![null]("images/produto_126.png")
+
+*Resultado testProduto() - Resultado Erro:*
+![null_success]("images/produto_erro.png")
 
 # Ferramentas similares
 
