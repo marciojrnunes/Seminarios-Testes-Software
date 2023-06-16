@@ -193,22 +193,28 @@ public class ProdutosCONST {
 Uma vez implementada todas as classes acima, basta execultar algum dos metodos (clicando no icone de iniciar ao lado do metódo) de testes e aguardar a realização do mesmo para que verifique o funcionamento ideal do programa. Se o teste for bem sucedido, o resultado exibido no terminal iniciado será do tipo **TESTS PASSED**, caso contrário, será exibida a exceção lançada pelo programa e o resultado **TESTS FAILED**. Conforme ilustrado abaixo:
 
 *Testando testProdutoNull():*
-![null]("images/null.png")
+
+![null](images/null.png)
 
 *Resultado testProdutoNull():*
-![null_success]("images/null_success.png")
+
+![null_success](images/null_success.png)
 
 *Testando testProduto() - Caso Sucesso:*
-![null]("images/produto_125.png")
+
+![produto](images/produto_125.png)
 
 *Resultado testProduto() - Resultado Sucesso:*
-![null_success]("images/produto_success.png")
+
+![produto_success](images/produto_success.png)
 
 *Testando testProduto() - Caso Erro:*
-![null]("images/produto_126.png")
+
+![produto2](images/produto_126.png)
 
 *Resultado testProduto() - Resultado Erro:*
-![null_success]("images/produto_erro.png")
+
+![produto_erro](images/produto_erro.png)
 
 # Ferramentas similares
 
