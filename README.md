@@ -1,6 +1,6 @@
 # Seminários: Teste de Software
 
-**Professor: Dener Augusto de Lisboa Brandão e João Eduardo Montandon**
+**Professor: João Eduardo Montandon**
 
 **Núm de integrantes: 2 alunos**
 
