@@ -135,7 +135,28 @@ Com isso, você pode focar no que realmente importa:
 O comportamento e a funcionalidade do seu software. Adicione o Faker ao seu projeto e comece a explorar todas as possibilidades que essa poderosa biblioteca oferece para gerar dados falsos e melhorar seus processos de desenvolvimento e teste.
 
 # 4. Ferramentas Similares:
-Liste pelo menos três ferramentas que também lidam com o tópico selecionado. Se não encontrar algo similar em Java procure em outras linguagens (PHP, C#, JavaScript, etc.). Fale resumidamente cada uma dessas bibliotecas e referencie para sua página principal.
+Aqui o que você pode trabalhar em cima:
+
+Faker.js:
+Similar ao Java Faker, o Faker.js é uma biblioteca para JavaScript que permite gerar dados falsos de maneira realista.
+Assim como o Java Faker, o Faker.js é amplamente utilizado para criar conjuntos de dados fictícios em projetos JavaScript.
+Oferece suporte para vários idiomas e tipos de dados, permitindo uma geração flexível e personalizável de dados falsos.
+
+Mimesis.Python:
+Para os usuários de Python, o Mimesis é a escolha equivalente ao Java Faker.
+Assim como o Java Faker, o Mimesis é uma biblioteca Python que oferece uma API simples e intuitiva para gerar dados fictícios de alta qualidade.
+É amplamente utilizado na comunidade Python para criar conjuntos de dados fictícios para testes e prototipagem, seguindo uma abordagem semelhante à do Java Faker.
+
+Mockaroo:
+Enquanto o Java Faker é uma biblioteca para Java, o Mockaroo é uma ferramenta online que oferece funcionalidades semelhantes, mas sem a necessidade de escrever código.
+Assim como o Java Faker, o Mockaroo é amplamente utilizado para gerar grandes volumes de dados fictícios para testes e prototipagem.
+Oferece uma ampla variedade de tipos de dados e formatos de saída, tornando-se uma opção conveniente para gerar dados fictícios rapidamente.
+
+Links das ferramentas
+* [**Faker.JS**](https://fakerjs.dev)
+* [**Mimesis.PYTHON**](https://mimesis.name/en/master/)
+* [**Mockaroo**](https://www.mockaroo.com)
+
 
 # 5. Referências
 * [**BAELDUNG.** A Guide to JavaFaker. Baeldung, 11 Maio. 2024.](https://www.baeldung.com/java-faker)
