@@ -138,6 +138,7 @@ O comportamento e a funcionalidade do seu software. Adicione o Faker ao seu proj
 Liste pelo menos três ferramentas que também lidam com o tópico selecionado. Se não encontrar algo similar em Java procure em outras linguagens (PHP, C#, JavaScript, etc.). Fale resumidamente cada uma dessas bibliotecas e referencie para sua página principal.
 
 # 5. Referências
-* **BAELDUNG.** A Guide to JavaFaker. Baeldung, 11 Maio. 2024. Disponível em: [Link](https://www.baeldung.com/java-faker)
-* **MARTINS, Rodrigo.** Como Gerar Dados para Testes com Java Faker. Atitude Reflexiva, 01 Jul. 2022. Disponível em: [Link](https://atitudereflexiva.wordpress.com/2022/07/01/como-gerar-dados-para-testes-com-java-faker/)
-* **FELTEX.** Como gerar massa de dados com Java Faker. YouTube, 14 Mar. 2023. Disponível em: [Link](https://youtu.be/teVyz17rVX4)
+* [**BAELDUNG.** A Guide to JavaFaker. Baeldung, 11 Maio. 2024.](https://www.baeldung.com/java-faker)
+* [**DiUS.** Java-Faker. DiUS, 12 Jan. 2022.](https://github.com/DiUS/java-faker)
+* [**MARTINS, Rodrigo.** Como Gerar Dados para Testes com Java Faker. Atitude Reflexiva, 01 Jul. 2022.](https://atitudereflexiva.wordpress.com/2022/07/01/como-gerar-dados-para-testes-com-java-faker/)
+* [**FELTEX.** Como gerar massa de dados com Java Faker. YouTube, 14 Mar. 2023.](https://youtu.be/teVyz17rVX4)
