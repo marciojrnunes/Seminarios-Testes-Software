@@ -11,7 +11,16 @@
 
 
 # 1. Introdução:
-Essa seção deverá introduzir os conceitos do assunto que seu grupo irá abordar. Você deverá mostrar o problema e como a ferramenta se propõe a resolver esse problema.
+* O que é Mockup na programação? 
+
+Antes de iniciarmos a apresentação sobre a ferramenta que selecionamos, devemos explicar sobre o Mockup, que é essencial para o nosso contexto.
+
+Mock no dicionário americano significa “algo feito como uma imitação.” Partindo disso, o Mockup é usado principalmente em testes unitários. Quando um objeto em teste depende de outros objetos (complexos), você pode substituir esses objetos por simulações para isolar o comportamento do objeto que deseja testar. Isso é especialmente útil se os objetos reais forem difíceis de incluir no teste unitário. Em resumo, um Mockup cria objetos que imitam o comportamento de objetos reais.
+
+* Java Faker
+
+Vindo dessa perspectiva, nasce o Java Faker, que é uma biblioteca robusta e flexível usada para criar dados fictícios. É especialmente útil para programadores que estão enfrentando problemas para popular bancos de dados, testar interfaces de usuário e validar funcionalidades. O Java Faker trabalha criando esses dados falsos, de forma simples e rápida, atendendo a essas necessidades. Ele fornece um extenso conjunto de opções para personalizar os dados gerados, permitindo que você personalize a saída para suas necessidades específicas.
+
 
 # 2. Instalação & Configuração:
 * Depois de iniciado um projeto, podemos fazer a referência de dependência para o JavaFaker.
@@ -163,3 +172,4 @@ Links das ferramentas
 * [**DiUS.** Java-Faker. DiUS, 12 Jan. 2022.](https://github.com/DiUS/java-faker)
 * [**MARTINS, Rodrigo.** Como Gerar Dados para Testes com Java Faker. Atitude Reflexiva, 01 Jul. 2022.](https://atitudereflexiva.wordpress.com/2022/07/01/como-gerar-dados-para-testes-com-java-faker/)
 * [**FELTEX.** Como gerar massa de dados com Java Faker. YouTube, 14 Mar. 2023.](https://youtu.be/teVyz17rVX4)
+* [**Stackoverflow.** O que é Mockup. Stackoverflow, 9 Out. de 2022.](https://stackoverflow.com/questions/2665812/what-is-mocking)
