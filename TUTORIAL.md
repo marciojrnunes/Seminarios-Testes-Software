@@ -1,4 +1,4 @@
-<h1 align="center"> Mockup de dados (Java Faker) </h1>
+<h1 align="center"> Mockup de dados </br> Por Pedro H. N. Oliveira & Davih G. Duque </h1>
   <h1 align="center"> <img alt="JavaFaker" src="JavaFaker.png" /> </h1>
 
 <p align="center">
