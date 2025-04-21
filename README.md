@@ -28,4 +28,7 @@ O roteiro do vídeo deverá descrever o tópico selecionado, e ter **obrigatoria
 
 ## Formato de Entrega
 
-Seu grupo deverá fazer um link do vídeo no youtube e um fork do repositório com o programa tutorial de exemplo do vídeo.
+Seu grupo deverá entregar:
+
+1. um link do vídeo no youtube
+1. fork do repositório com o programa tutorial de exemplo do vídeo
