@@ -32,3 +32,7 @@ Seu grupo deverá entregar:
 
 1. link do youtube com o vídeo tutorial
 1. fork do repositório com o programa tutorial de exemplo do vídeo
+
+https://youtu.be/C-IZ9X7KzYM
+
+
